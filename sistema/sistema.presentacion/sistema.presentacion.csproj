@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{184DDC13-9859-488C-9BFD-FF2D04A8F5BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sistema.presentacion</RootNamespace>
+    <AssemblyName>sistema.presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeStandard, Version=2.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.2.2.6\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticulo.Designer.cs">
+      <DependentUpon>frmArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcategoria.Designer.cs">
+      <DependentUpon>frmcategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprincipal.Designer.cs">
+      <DependentUpon>frmprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrol.Designer.cs">
+      <DependentUpon>frmrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmususario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmususario.Designer.cs">
+      <DependentUpon>frmususario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArticulo.resx">
+      <DependentUpon>frmArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcategoria.resx">
+      <DependentUpon>frmcategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprincipal.resx">
+      <DependentUpon>frmprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrol.resx">
+      <DependentUpon>frmrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmususario.resx">
+      <DependentUpon>frmususario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sistema.Negocio\Sistema.Negocio.csproj">
+      <Project>{e08b35c0-7a26-4eaa-9b71-b0dbf60f7cc8}</Project>
+      <Name>Sistema.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRODUC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprasaaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventaaass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tags_categories_icon_145927.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipping_products_22121.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoppaymentorderbuy-33_icon-icons.com_73869.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_clients_group_16774.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accesos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roles.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_accounts_15362.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphmagnifier_117961.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventanas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veeer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_37110.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_add_insert_21836.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nooooo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizarr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept_icon-icons.com_74428.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siii.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_stop_exit_1583.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textura 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cementos-texturas-pared.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageup_imagen_12892.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_gov_icon_146024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginoo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salidaooo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

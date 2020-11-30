@@ -1,0 +1,6 @@
+D:\vb\mi proyecto\sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.dll
+D:\vb\mi proyecto\sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.pdb
+D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csprojAssemblyReference.cache
+D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.CoreCompileInputs.cache
+D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.dll
+D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.pdb

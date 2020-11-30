@@ -1,0 +1,9 @@
+D:\vb\mi proyecto\sistema\Sistema.Datos\bin\Debug\Sistema.Datos.dll
+D:\vb\mi proyecto\sistema\Sistema.Datos\bin\Debug\Sistema.Datos.pdb
+D:\vb\mi proyecto\sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.dll
+D:\vb\mi proyecto\sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.pdb
+D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csprojAssemblyReference.cache
+D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CoreCompileInputs.cache
+D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CopyComplete
+D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.dll
+D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.pdb
