@@ -422,7 +422,7 @@
             this.Controls.Add(this.tabgeneral);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmcliente";
-            this.Text = "Proveedores";
+            this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmcliente_Load);
             this.tabgeneral.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
