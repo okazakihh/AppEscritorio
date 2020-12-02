@@ -9,3 +9,14 @@ D:\vb\mi proyecto\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.dll
 D:\vb\mi proyecto\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.pdb
 D:\vb\mi proyecto\sistema\Sistema.Negocio\bin\Debug\Sistema.Datos.dll
 D:\vb\mi proyecto\sistema\Sistema.Negocio\bin\Debug\Sistema.Datos.pdb
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Negocio.dll
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Negocio.pdb
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Datos.dll
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Entidades.dll
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Datos.pdb
+D:\vb\App Sistema V\sistema\Sistema.Negocio\bin\Debug\Sistema.Entidades.pdb
+D:\vb\App Sistema V\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.csprojAssemblyReference.cache
+D:\vb\App Sistema V\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.csproj.CoreCompileInputs.cache
+D:\vb\App Sistema V\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.csproj.CopyComplete
+D:\vb\App Sistema V\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.dll
+D:\vb\App Sistema V\sistema\Sistema.Negocio\obj\Debug\Sistema.Negocio.pdb

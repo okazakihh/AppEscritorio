@@ -22,3 +22,29 @@ D:\vb\mi proyecto\sistema\sistema.presentacion\bin\Debug\System.Drawing.Common.d
 D:\vb\mi proyecto\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmrol.resources
 D:\vb\mi proyecto\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmususario.resources
 D:\vb\mi proyecto\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmlogin.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\sistema.presentacion.exe.config
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\sistema.presentacion.exe
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\sistema.presentacion.pdb
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\BarcodeStandard.dll
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Negocio.dll
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\System.Drawing.Common.dll
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Datos.dll
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Entidades.dll
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Negocio.pdb
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Datos.pdb
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\Sistema.Entidades.pdb
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.csprojAssemblyReference.cache
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmArticulo.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmcategoria.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmlogin.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmprincipal.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmproveedor.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmrol.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmususario.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.Properties.Resources.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.csproj.GenerateResource.cache
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.csproj.CoreCompileInputs.cache
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.csproj.CopyComplete
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.exe
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.pdb
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmcliente.resources

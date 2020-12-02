@@ -4,3 +4,9 @@ D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csprojAs
 D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.CoreCompileInputs.cache
 D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.dll
 D:\vb\mi proyecto\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.pdb
+D:\vb\App Sistema V\sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.dll
+D:\vb\App Sistema V\sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.pdb
+D:\vb\App Sistema V\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csprojAssemblyReference.cache
+D:\vb\App Sistema V\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.CoreCompileInputs.cache
+D:\vb\App Sistema V\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.dll
+D:\vb\App Sistema V\sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.pdb

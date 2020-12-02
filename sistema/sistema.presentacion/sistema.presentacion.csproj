@@ -76,6 +76,18 @@
     <Compile Include="frmprincipal.Designer.cs">
       <DependentUpon>frmprincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcliente.Designer.cs">
+      <DependentUpon>frmcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmproveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproveedor.Designer.cs">
+      <DependentUpon>frmproveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmrol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmprincipal.resx">
       <DependentUpon>frmprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcliente.resx">
+      <DependentUpon>frmcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproveedor.resx">
+      <DependentUpon>frmproveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmrol.resx">
       <DependentUpon>frmrol.cs</DependentUpon>

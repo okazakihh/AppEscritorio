@@ -213,5 +213,19 @@ namespace sistema.presentacion
                 Application.Exit();
             }
         }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmproveedor frm = new frmproveedor();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcliente frm = new frmcliente();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

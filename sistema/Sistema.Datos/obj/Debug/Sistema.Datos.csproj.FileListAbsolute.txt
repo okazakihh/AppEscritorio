@@ -7,3 +7,12 @@ D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CoreCompi
 D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CopyComplete
 D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.dll
 D:\vb\mi proyecto\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.pdb
+D:\vb\App Sistema V\sistema\Sistema.Datos\bin\Debug\Sistema.Datos.dll
+D:\vb\App Sistema V\sistema\Sistema.Datos\bin\Debug\Sistema.Datos.pdb
+D:\vb\App Sistema V\sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.dll
+D:\vb\App Sistema V\sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.pdb
+D:\vb\App Sistema V\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csprojAssemblyReference.cache
+D:\vb\App Sistema V\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CoreCompileInputs.cache
+D:\vb\App Sistema V\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CopyComplete
+D:\vb\App Sistema V\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.dll
+D:\vb\App Sistema V\sistema\Sistema.Datos\obj\Debug\Sistema.Datos.pdb

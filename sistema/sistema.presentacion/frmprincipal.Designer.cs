@@ -61,11 +61,11 @@
             this.TsCompras = new System.Windows.Forms.ToolStripButton();
             this.TsVentas = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.TsUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.lblhora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.TsUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -109,7 +109,7 @@
             // 
             this.categoriasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.tags_categories_icon_145927;
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(232, 40);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.toolStripMenuItem2.Image = global::sistema.presentacion.Properties.Resources.shipping_products_22121;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 40);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(232, 40);
             this.toolStripMenuItem2.Text = "&Articulos";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -135,14 +135,15 @@
             // 
             this.proveedoresToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.proveedor;
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
             this.proveedoresToolStripMenuItem.Text = "&Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // comprasToolStripMenuItem
             // 
             this.comprasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.compras;
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
             this.comprasToolStripMenuItem.Text = "&Compras";
             // 
             // MnuVentas
@@ -161,6 +162,7 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.clientesToolStripMenuItem.Text = "&Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem1
             // 
@@ -359,6 +361,14 @@
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
+            // TsUsuario
+            // 
+            this.TsUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.TsUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TsUsuario.Name = "TsUsuario";
+            this.TsUsuario.Size = new System.Drawing.Size(101, 32);
+            this.TsUsuario.Text = "usuario";
+            // 
             // lblhora
             // 
             this.lblhora.AutoSize = true;
@@ -386,14 +396,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(19, 35);
             this.dateTimePicker1.TabIndex = 10;
-            // 
-            // TsUsuario
-            // 
-            this.TsUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.TsUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TsUsuario.Name = "TsUsuario";
-            this.TsUsuario.Size = new System.Drawing.Size(101, 32);
-            this.TsUsuario.Text = "usuario";
             // 
             // frmprincipal
             // 
