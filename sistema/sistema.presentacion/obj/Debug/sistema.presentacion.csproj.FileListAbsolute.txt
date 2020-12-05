@@ -48,3 +48,4 @@ D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.exe
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.pdb
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmcliente.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmingreso.resources

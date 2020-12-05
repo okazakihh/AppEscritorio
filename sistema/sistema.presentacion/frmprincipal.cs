@@ -227,5 +227,12 @@ namespace sistema.presentacion
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmingreso frm = new frmingreso();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

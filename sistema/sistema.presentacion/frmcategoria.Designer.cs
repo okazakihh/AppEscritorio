@@ -88,7 +88,7 @@
             this.tabPage1.Controls.Add(this.dgblistado);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(876, 432);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -99,7 +99,7 @@
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Image = global::sistema.presentacion.Properties.Resources.eliminar;
             this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneliminar.Location = new System.Drawing.Point(308, 375);
+            this.btneliminar.Location = new System.Drawing.Point(374, 375);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(112, 37);
             this.btneliminar.TabIndex = 7;
@@ -114,9 +114,9 @@
             this.btndesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndesactivar.Image = global::sistema.presentacion.Properties.Resources.cancel_stop_exit_1583;
             this.btndesactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndesactivar.Location = new System.Drawing.Point(157, 375);
+            this.btndesactivar.Location = new System.Drawing.Point(194, 379);
             this.btndesactivar.Name = "btndesactivar";
-            this.btndesactivar.Size = new System.Drawing.Size(123, 37);
+            this.btndesactivar.Size = new System.Drawing.Size(150, 37);
             this.btndesactivar.TabIndex = 6;
             this.btndesactivar.Text = "Desactivar";
             this.btndesactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,7 +143,7 @@
             this.chkseleccionar.AutoSize = true;
             this.chkseleccionar.Location = new System.Drawing.Point(53, 340);
             this.chkseleccionar.Name = "chkseleccionar";
-            this.chkseleccionar.Size = new System.Drawing.Size(148, 28);
+            this.chkseleccionar.Size = new System.Drawing.Size(167, 33);
             this.chkseleccionar.TabIndex = 4;
             this.chkseleccionar.Text = "Seleccionar";
             this.chkseleccionar.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@
             this.tabPage2.Controls.Add(this.btninsertar);
             this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(876, 432);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";

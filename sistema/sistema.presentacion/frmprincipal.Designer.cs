@@ -109,7 +109,7 @@
             // 
             this.categoriasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.tags_categories_icon_145927;
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(232, 40);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.toolStripMenuItem2.Image = global::sistema.presentacion.Properties.Resources.shipping_products_22121;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(232, 40);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 40);
             this.toolStripMenuItem2.Text = "&Articulos";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -135,7 +135,7 @@
             // 
             this.proveedoresToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.proveedor;
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.proveedoresToolStripMenuItem.Text = "&Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -143,8 +143,9 @@
             // 
             this.comprasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.compras;
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.comprasToolStripMenuItem.Text = "&Compras";
+            this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
             // MnuVentas
             // 
@@ -185,7 +186,7 @@
             // 
             this.rolesToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.roles;
             this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
-            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(210, 40);
             this.rolesToolStripMenuItem.Text = "&Roles";
             this.rolesToolStripMenuItem.Click += new System.EventHandler(this.rolesToolStripMenuItem_Click);
             // 
@@ -193,7 +194,7 @@
             // 
             this.usuariosToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.user_accounts_15362;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(210, 40);
             this.usuariosToolStripMenuItem.Text = "&Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
@@ -375,7 +376,7 @@
             this.lblhora.BackColor = System.Drawing.Color.White;
             this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblhora.Location = new System.Drawing.Point(1091, 9);
+            this.lblhora.Location = new System.Drawing.Point(1059, 5);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(64, 25);
             this.lblhora.TabIndex = 9;
@@ -392,7 +393,7 @@
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.LightSteelBlue;
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1066, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1034, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(19, 35);
             this.dateTimePicker1.TabIndex = 10;
