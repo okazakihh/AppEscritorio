@@ -206,6 +206,7 @@ namespace sistema.presentacion
                     {
                         this.MensajeOk("Se actualizó de forma correcta el registro");
                         this.listar();
+                        tabgeneral.SelectedIndex = 0;
                     }
                     else
                     {
