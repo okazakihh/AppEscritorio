@@ -154,9 +154,6 @@
   <data name="database_add_insert_21836" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database_add_insert_21836.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="roles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\roles.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="users_clients_group_16774" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_clients_group_16774.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +165,9 @@
   </data>
   <data name="imageup_imagen_12892" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageup_imagen_12892.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salidaooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salidaooo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="siii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siii.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +193,9 @@
   <data name="cementos-texturas-pared" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cementos-texturas-pared.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shoppaymentorderbuy-33_icon-icons.com_73869" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoppaymentorderbuy-33_icon-icons.com_73869.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +205,8 @@
   <data name="graphmagnifier_117961" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\graphmagnifier_117961.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shoppaymentorderbuy-33_icon-icons.com_73869" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shoppaymentorderbuy-33_icon-icons.com_73869.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="roles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roles.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loginoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginoo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +226,7 @@
   <data name="nooooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nooooo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salidaooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salidaooo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cancel_40972" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_40972.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -82,7 +82,8 @@ namespace Sistema.Datos
                 Comando.Parameters.Add("@detalle", SqlDbType.Structured).Value = obj.Detalles;
 
                 SqlCon.Open();
-                Rpta = Comando.ExecuteNonQuery() == 1 ? "OK" : "No se pudo ingresar el registro";
+                Comando.ExecuteNonQuery();
+                Rpta ="OK" ;
             }
             catch (Exception ex)
             {

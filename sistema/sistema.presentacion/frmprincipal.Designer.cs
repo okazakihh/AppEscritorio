@@ -89,8 +89,8 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(12, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(1265, 40);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(1320, 40);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -109,7 +109,7 @@
             // 
             this.categoriasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.tags_categories_icon_145927;
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(232, 40);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.toolStripMenuItem2.Image = global::sistema.presentacion.Properties.Resources.shipping_products_22121;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 40);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(232, 40);
             this.toolStripMenuItem2.Text = "&Articulos";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -135,7 +135,7 @@
             // 
             this.proveedoresToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.proveedor;
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
             this.proveedoresToolStripMenuItem.Text = "&Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -143,7 +143,7 @@
             // 
             this.comprasToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.compras;
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(252, 40);
             this.comprasToolStripMenuItem.Text = "&Compras";
             this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
@@ -161,7 +161,7 @@
             // 
             this.clientesToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.users_clients_group_16774;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(205, 40);
             this.clientesToolStripMenuItem.Text = "&Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -169,7 +169,7 @@
             // 
             this.ventasToolStripMenuItem1.Image = global::sistema.presentacion.Properties.Resources.ventaaass;
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(270, 40);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(205, 40);
             this.ventasToolStripMenuItem1.Text = "&Ventas";
             // 
             // MnuAccesos
@@ -326,7 +326,7 @@
             this.TsVentas});
             this.toolStrip.Location = new System.Drawing.Point(0, 40);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(1265, 29);
+            this.toolStrip.Size = new System.Drawing.Size(1320, 29);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -355,10 +355,10 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsUsuario});
-            this.statusStrip.Location = new System.Drawing.Point(0, 833);
+            this.statusStrip.Location = new System.Drawing.Point(0, 713);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 29, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1265, 39);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 25, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1320, 39);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -376,7 +376,7 @@
             this.lblhora.BackColor = System.Drawing.Color.White;
             this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblhora.Location = new System.Drawing.Point(1059, 5);
+            this.lblhora.Location = new System.Drawing.Point(1044, 9);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(64, 25);
             this.lblhora.TabIndex = 9;
@@ -393,30 +393,30 @@
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.LightSteelBlue;
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.DodgerBlue;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1034, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1021, 9);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(19, 35);
+            this.dateTimePicker1.Size = new System.Drawing.Size(17, 30);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // frmprincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BackgroundImage = global::sistema.presentacion.Properties.Resources.PRODUC;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1265, 872);
+            this.ClientSize = new System.Drawing.Size(1320, 752);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblhora);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmprincipal";
             this.Text = "sistema de ventas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -123,6 +123,16 @@ namespace sistema.presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancel_40972 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_40972", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_stop_exit_1583 {
             get {
                 object obj = ResourceManager.GetObject("cancel_stop_exit_1583", resourceCulture);
