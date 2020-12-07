@@ -104,7 +104,7 @@ namespace sistema.presentacion
             this.DtDetalle.Columns.Add("articulo", System.Type.GetType("System.String"));
             this.DtDetalle.Columns.Add("cantidad", System.Type.GetType("System.Int32"));
             this.DtDetalle.Columns.Add("precio", System.Type.GetType("System.Decimal"));
-            this.DtDetalle.Columns.Add("precio_total", System.Type.GetType("System.Decimal"));
+            this.DtDetalle.Columns.Add("importe", System.Type.GetType("System.Decimal"));
 
             dgvdetalle.DataSource = this.DtDetalle;
 
@@ -132,7 +132,7 @@ namespace sistema.presentacion
             DgvArticulos.Columns[3].Width = 100;
             DgvArticulos.Columns[3].HeaderText = "Codigo";
             DgvArticulos.Columns[4].Width = 150;
-            DgvArticulos.Columns[5].Width = 100;
+            DgvArticulos.Columns[5].Width = 140;
             DgvArticulos.Columns[5].HeaderText = "Precio venta";
             DgvArticulos.Columns[6].Width = 70;
             DgvArticulos.Columns[7].Width = 200;
@@ -209,7 +209,7 @@ namespace sistema.presentacion
                 fila["articulo"] = Nombre;
                 fila["cantidad"] = 1;
                 fila["precio"] = Precio;
-                fila["precio_total"] = Precio;
+                fila["importe"] = Precio;
 
                 this.DtDetalle.Rows.Add(fila);
                 this.CalcularTotales();
@@ -227,15 +227,15 @@ namespace sistema.presentacion
             {
                 foreach (DataRow FilaTemp in DtDetalle.Rows)
                 {
-                    Total = Total + Convert.ToDecimal(FilaTemp["precio_total"]);
+                    Total = Total + Convert.ToDecimal(FilaTemp["importe"]);
 
                 }
             }
 
             Subtotal = Total / (1 + Convert.ToDecimal(TxtImpuesto.Text));
-            TxtTotal.Text = Total.ToString("$#0,00#");
-            TxtSubtotal.Text = Subtotal.ToString("$#0,00#");
-            TxtIva.Text = (Total - Subtotal).ToString("$#0,00#");
+            TxtTotal.Text = Total.ToString("#0,00#");
+            TxtSubtotal.Text = Subtotal.ToString("#0,00#");
+            TxtIva.Text = (Total - Subtotal).ToString("#0,00#");
 
         }
 
@@ -283,7 +283,7 @@ namespace sistema.presentacion
             DataRow Fila = (DataRow)DtDetalle.Rows[e.RowIndex];
             decimal Precio = Convert.ToDecimal(Fila["precio"]);
             int Cantidad = Convert.ToInt32(Fila["cantidad"]);
-            Fila["precio_total"] = Precio * Cantidad;
+            Fila["importe"] = Precio * Cantidad;
             this.CalcularTotales();
         }
 
@@ -307,7 +307,7 @@ namespace sistema.presentacion
                 }
                 else
                 {
-                    Rpta = NIngreso.insertar(Convert.ToInt32(TxtIdProveedor.Text),Variables.IdUsuario, CboComprobante.Text, TxtSerieComprobante.Text.Trim(), TxtNumComprobante.Text.Trim(), Convert.ToDecimal(TxtImpuesto.Text), Convert.ToDecimal(TxtTotal.Text), DtDetalle);
+                    Rpta = NIngreso.Insertar(Convert.ToInt32(TxtIdProveedor.Text),Variables.IdUsuario, CboComprobante.Text, TxtSerieComprobante.Text.Trim(), TxtNumComprobante.Text.Trim(),Convert.ToDecimal(TxtImpuesto.Text), Convert.ToDecimal(TxtTotal.Text), DtDetalle);
                     if (Rpta.Equals("OK"))
                     {
                         this.MensajeOk("Se insertó de forma correcta el registro");
@@ -329,6 +329,103 @@ namespace sistema.presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             this.CalcularTotales();
+        }
+
+        private void dgblistado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+               
+                DGVMostrarDetalle.DataSource = NIngreso.ListarDetalle(Convert.ToInt32(dgblistado.CurrentRow.Cells["ID"].Value));
+                decimal Total, Subtotal;
+                decimal Impuesto = Convert.ToDecimal(dgblistado.CurrentRow.Cells["Impuesto"].Value);
+                Total = Convert.ToDecimal(dgblistado.CurrentRow.Cells["Total"].Value);
+                Subtotal = Total / (1 + Impuesto);
+                DGVMostrarDetalle.Columns[0].Width = 70;
+                DGVMostrarDetalle.Columns[5].HeaderText = "PRECIO TOTAL";
+                DGVMostrarDetalle.Columns[5].Width = 150;
+                txtttotal.Text = Total.ToString("#0,00#");
+                txtssubtotal.Text = Subtotal.ToString("#0,00#");
+                txtiiva.Text = (Total - Subtotal).ToString("#0,00#");
+                panelmostrar.Visible = true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BtnCerrarDetalle_Click(object sender, EventArgs e)
+        {
+            panelmostrar.Visible = false;
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiar();
+            tabgeneral.SelectedIndex = 0;
+        }
+
+        private void dgblistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dgblistado.Columns["Seleccionar"].Index)
+            {
+                DataGridViewCheckBoxCell chkeliminar = (DataGridViewCheckBoxCell)dgblistado.Rows[e.RowIndex].Cells["Seleccionar"];
+                chkeliminar.Value = !Convert.ToBoolean(chkeliminar.Value);
+            }
+        }
+
+        private void chkseleccionar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkseleccionar.Checked)
+            {
+                dgblistado.Columns[0].Visible = true;
+                btnanular.Visible = true;
+
+            }
+            else
+            {
+                dgblistado.Columns[0].Visible = false;
+                btnanular.Visible = true;
+            }
+        }
+
+        private void btnanular_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("Realmente desea anular el (los) registro(s) ?", "Sistema de ventas", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (Opcion == DialogResult.OK)
+                {
+                    int Codigo;
+                    string Rpta = "";
+
+                    foreach (DataGridViewRow row in dgblistado.Rows)
+                    {
+                        if (Convert.ToBoolean(row.Cells[0].Value))
+                        {
+                            Codigo = Convert.ToInt32(row.Cells[1].Value);
+                            Rpta = NIngreso.Anular(Codigo);
+                            if (Rpta.Equals("OK"))
+                            {
+                                this.MensajeOk("Se anuló el registro " + Convert.ToString(row.Cells[6].Value) + "_" + Convert.ToString(row.Cells[7].Value));
+                            }
+                            else
+                            {
+                                this.MensajeError(Rpta);
+                            }
+                        }
+                    }
+
+                    this.listar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
     }
 }

@@ -63,6 +63,33 @@ namespace Sistema.Datos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+        public DataTable ListarDetalle(int Id)
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().crearConexion();
+                SqlCommand Comando = new SqlCommand("ingreso_listar_detalle", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@idingreso", SqlDbType.Int).Value = Id;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
         public string Insertar(Ingreso obj)
         {
             string Rpta = "";
@@ -73,7 +100,7 @@ namespace Sistema.Datos
                 SqlCommand Comando = new SqlCommand("ingreso_insertar", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("@idproveedor", SqlDbType.Int).Value = obj.IdProveedor;
-                Comando.Parameters.Add("@idususario", SqlDbType.Int).Value = obj.IdUsuario;
+                Comando.Parameters.Add("@idusuario", SqlDbType.Int).Value = obj.IdUsuario;
                 Comando.Parameters.Add("@tipo_comprobante", SqlDbType.VarChar).Value = obj.TipoComprobante;
                 Comando.Parameters.Add("@serie_comprobante", SqlDbType.VarChar).Value = obj.SerieComprobante;
                 Comando.Parameters.Add("@num_comprobante", SqlDbType.VarChar).Value = obj.NumComprobante;
@@ -106,9 +133,11 @@ namespace Sistema.Datos
                 SqlCommand Comando = new SqlCommand("ingreso_anular", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("@idingreso", SqlDbType.Int).Value = Id;
-
+                
                 SqlCon.Open();
-                Rpta = Comando.ExecuteNonQuery() == 1 ? "OK" : "No se pudo anular el registro";
+
+                Comando.ExecuteNonQuery();
+                Rpta =  "OK" ;
             }
             catch (Exception ex)
             {
