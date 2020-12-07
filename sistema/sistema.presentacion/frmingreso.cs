@@ -82,7 +82,7 @@ namespace sistema.presentacion
         {
             dgblistado.Columns[0].Visible = false;
             dgblistado.Columns[1].Visible = false;
-            dgblistado.Columns[1].Visible = false;
+            dgblistado.Columns[2].Visible = false;
             dgblistado.Columns[0].Width = 100;
             dgblistado.Columns[3].Width = 150;
             dgblistado.Columns[4].Width = 150;

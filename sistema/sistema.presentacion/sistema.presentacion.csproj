@@ -106,11 +106,23 @@
     <Compile Include="frmususario.Designer.cs">
       <DependentUpon>frmususario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmventa.Designer.cs">
+      <DependentUpon>frmventa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmvistaproveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmvistaproveedor.Designer.cs">
       <DependentUpon>frmvistaproveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvista_clienteventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvista_clienteventa.Designer.cs">
+      <DependentUpon>frmvista_clienteventa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,8 +154,14 @@
     <EmbeddedResource Include="frmususario.resx">
       <DependentUpon>frmususario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmventa.resx">
+      <DependentUpon>frmventa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmvistaproveedor.resx">
       <DependentUpon>frmvistaproveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvista_clienteventa.resx">
+      <DependentUpon>frmvista_clienteventa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

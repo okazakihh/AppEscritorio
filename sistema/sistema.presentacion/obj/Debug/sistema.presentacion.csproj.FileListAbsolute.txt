@@ -50,3 +50,5 @@ D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmcliente.resources
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmingreso.resources
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmvistaproveedor.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmventa.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmvista_clienteventa.resources
