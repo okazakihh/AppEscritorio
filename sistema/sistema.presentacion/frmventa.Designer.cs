@@ -148,8 +148,6 @@
             this.CboComprobante.Items.AddRange(new object[] {
             "BOLETA",
             "FACTURA",
-            "GUIA",
-            "REMISION",
             "TICKET"});
             this.CboComprobante.Location = new System.Drawing.Point(8, 120);
             this.CboComprobante.Name = "CboComprobante";
@@ -273,6 +271,7 @@
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btninsertar
             // 
@@ -287,6 +286,7 @@
             this.btninsertar.Text = "Insertar";
             this.btninsertar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btninsertar.UseVisualStyleBackColor = true;
+            this.btninsertar.Click += new System.EventHandler(this.btninsertar_Click);
             // 
             // Seleccionar
             // 
@@ -327,7 +327,7 @@
             this.panelmostrar.Controls.Add(this.label8);
             this.panelmostrar.Controls.Add(this.DGVMostrarDetalle);
             this.panelmostrar.Controls.Add(this.BtnCerrarDetalle);
-            this.panelmostrar.Location = new System.Drawing.Point(200, 239);
+            this.panelmostrar.Location = new System.Drawing.Point(236, 209);
             this.panelmostrar.Name = "panelmostrar";
             this.panelmostrar.Size = new System.Drawing.Size(971, 317);
             this.panelmostrar.TabIndex = 7;
@@ -399,6 +399,7 @@
             this.BtnCerrarDetalle.Size = new System.Drawing.Size(48, 42);
             this.BtnCerrarDetalle.TabIndex = 28;
             this.BtnCerrarDetalle.UseVisualStyleBackColor = false;
+            this.BtnCerrarDetalle.Click += new System.EventHandler(this.BtnCerrarDetalle_Click);
             // 
             // chkseleccionar
             // 
@@ -409,6 +410,7 @@
             this.chkseleccionar.TabIndex = 4;
             this.chkseleccionar.Text = "Seleccionar";
             this.chkseleccionar.UseVisualStyleBackColor = true;
+            this.chkseleccionar.CheckedChanged += new System.EventHandler(this.chkseleccionar_CheckedChanged);
             // 
             // txtbuscar
             // 
@@ -441,6 +443,7 @@
             this.btnanular.TabIndex = 6;
             this.btnanular.Text = "Anular";
             this.btnanular.UseVisualStyleBackColor = true;
+            this.btnanular.Click += new System.EventHandler(this.btnanular_Click);
             // 
             // btnbuscar
             // 
@@ -502,6 +505,8 @@
             this.dgblistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgblistado.Size = new System.Drawing.Size(1191, 330);
             this.dgblistado.TabIndex = 0;
+            this.dgblistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellContentClick);
+            this.dgblistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellDoubleClick);
             // 
             // tabgeneral
             // 
@@ -575,7 +580,7 @@
             this.panelArticulos.Controls.Add(this.BtnFiltrarArticulos);
             this.panelArticulos.Controls.Add(this.TxtBuscarArticulo);
             this.panelArticulos.Controls.Add(this.label6);
-            this.panelArticulos.Location = new System.Drawing.Point(64, 21);
+            this.panelArticulos.Location = new System.Drawing.Point(64, 79);
             this.panelArticulos.Name = "panelArticulos";
             this.panelArticulos.Size = new System.Drawing.Size(1092, 340);
             this.panelArticulos.TabIndex = 27;
@@ -597,6 +602,7 @@
             this.DgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvArticulos.Size = new System.Drawing.Size(1031, 218);
             this.DgvArticulos.TabIndex = 29;
+            this.DgvArticulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvArticulos_CellDoubleClick);
             // 
             // LblTotalArticulos
             // 
@@ -618,6 +624,7 @@
             this.BtnCerrarArticulos.Size = new System.Drawing.Size(48, 42);
             this.BtnCerrarArticulos.TabIndex = 27;
             this.BtnCerrarArticulos.UseVisualStyleBackColor = false;
+            this.BtnCerrarArticulos.Click += new System.EventHandler(this.BtnCerrarArticulos_Click);
             // 
             // BtnFiltrarArticulos
             // 
@@ -629,6 +636,7 @@
             this.BtnFiltrarArticulos.Size = new System.Drawing.Size(43, 38);
             this.BtnFiltrarArticulos.TabIndex = 26;
             this.BtnFiltrarArticulos.UseVisualStyleBackColor = true;
+            this.BtnFiltrarArticulos.Click += new System.EventHandler(this.BtnFiltrarArticulos_Click);
             // 
             // TxtBuscarArticulo
             // 
@@ -638,6 +646,7 @@
             this.TxtBuscarArticulo.Name = "TxtBuscarArticulo";
             this.TxtBuscarArticulo.Size = new System.Drawing.Size(246, 23);
             this.TxtBuscarArticulo.TabIndex = 1;
+            this.TxtBuscarArticulo.TextChanged += new System.EventHandler(this.TxtBuscarArticulo_TextChanged);
             // 
             // label6
             // 
@@ -658,6 +667,7 @@
             this.BtnVerArticulo.Size = new System.Drawing.Size(43, 38);
             this.BtnVerArticulo.TabIndex = 17;
             this.BtnVerArticulo.UseVisualStyleBackColor = true;
+            this.BtnVerArticulo.Click += new System.EventHandler(this.BtnVerArticulo_Click);
             // 
             // label10
             // 
@@ -693,6 +703,7 @@
             this.dgvdetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdetalle.Size = new System.Drawing.Size(804, 256);
             this.dgvdetalle.TabIndex = 22;
+            this.dgvdetalle.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdetalle_CellEndEdit);
             // 
             // label9
             // 
@@ -753,6 +764,7 @@
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(255, 23);
             this.TxtCodigo.TabIndex = 17;
+            this.TxtCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCodigo_KeyDown);
             // 
             // button1
             // 
@@ -764,6 +776,7 @@
             this.button1.Size = new System.Drawing.Size(39, 36);
             this.button1.TabIndex = 28;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // errorIcono
             // 

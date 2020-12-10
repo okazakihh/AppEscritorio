@@ -19,10 +19,20 @@ namespace Sistema.Negocio
             DArticulo Datos = new DArticulo();
             return Datos.Buscar(valor);
         }
+        public static DataTable Buscarventa(string valor)
+        {
+            DArticulo Datos = new DArticulo();
+            return Datos.Buscarventa(valor);
+        }
         public static DataTable BuscarCodigo(string valor)
         {
             DArticulo Datos = new DArticulo();
             return Datos.BuscarCodigo(valor);
+        }
+        public static DataTable BuscarCodigoventa(string valor)
+        {
+            DArticulo Datos = new DArticulo();
+            return Datos.BuscarCodigoventa(valor);
         }
         public static string Insertar(int IdCategoria, string Codigo,  string Nombre,decimal PrecioVenta, int Stock,  string Descripcion, string Imagen)
         {

@@ -440,5 +440,11 @@ namespace sistema.presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void BtnReporte_Click(object sender, EventArgs e)
+        {
+            Reportes.frmreportearticulos Reporte = new Reportes.frmreportearticulos();
+            Reporte.ShowDialog();
+        }
     }
 }
