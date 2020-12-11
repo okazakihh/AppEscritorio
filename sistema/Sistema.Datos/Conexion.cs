@@ -22,7 +22,7 @@ namespace Sistema.Datos
 
         private Conexion()
         {
-            this.Base = "dbsistema ";
+            this.Base = "dbsistemaprod ";
             this.Servidor = "DESKTOP-J5AN5ML\\PACHO";
             this.Usuario = "pacho";
             this.Clave = "pacho29";

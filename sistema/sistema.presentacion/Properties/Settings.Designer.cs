@@ -26,8 +26,8 @@ namespace sistema.presentacion.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J5AN5ML\\PACHO;Initial Catalog=dbsistema;User ID=pacho;Passwor" +
-            "d=pacho29")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J5AN5ML\\PACHO;Initial Catalog=dbsistemaprod;User ID=pacho;Pas" +
+            "sword=pacho29")]
         public string cn {
             get {
                 return ((string)(this["cn"]));

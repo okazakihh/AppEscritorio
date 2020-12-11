@@ -161,7 +161,7 @@
             // 
             this.clientesToolStripMenuItem.Image = global::sistema.presentacion.Properties.Resources.users_clients_group_16774;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(205, 40);
             this.clientesToolStripMenuItem.Text = "&Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -169,7 +169,7 @@
             // 
             this.ventasToolStripMenuItem1.Image = global::sistema.presentacion.Properties.Resources.ventaaass;
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(270, 40);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(205, 40);
             this.ventasToolStripMenuItem1.Text = "&Ventas";
             this.ventasToolStripMenuItem1.Click += new System.EventHandler(this.ventasToolStripMenuItem1_Click);
             // 
@@ -215,6 +215,7 @@
             this.consultaDeVentasToolStripMenuItem.Name = "consultaDeVentasToolStripMenuItem";
             this.consultaDeVentasToolStripMenuItem.Size = new System.Drawing.Size(344, 40);
             this.consultaDeVentasToolStripMenuItem.Text = "Consulta de ventas";
+            this.consultaDeVentasToolStripMenuItem.Click += new System.EventHandler(this.consultaDeVentasToolStripMenuItem_Click);
             // 
             // consultaDeComprasToolStripMenuItem
             // 

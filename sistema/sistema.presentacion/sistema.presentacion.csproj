@@ -12,6 +12,25 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\vb\instalador\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>sistema de ventas</ProductName>
+    <PublisherName>TECNOLOGY OKAZAKIH</PublisherName>
+    <SuiteName>sistema</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,6 +41,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +51,25 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cashier2_118191.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0C6255D600724AC31D33DB77413938B08816A077</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BarcodeStandard, Version=2.2.6.0, Culture=neutral, processorArchitecture=MSIL">
@@ -87,6 +126,12 @@
     </Compile>
     <Compile Include="frmcategoria.Designer.cs">
       <DependentUpon>frmcategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsulta_ventafechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsulta_ventafechas.Designer.cs">
+      <DependentUpon>frmconsulta_ventafechas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmingreso.cs">
       <SubType>Form</SubType>
@@ -161,6 +206,12 @@
     <Compile Include="Reportes\frmreportearticulos.Designer.cs">
       <DependentUpon>frmreportearticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\frmreportecomprobanteventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmreportecomprobanteventa.Designer.cs">
+      <DependentUpon>frmreportecomprobanteventa.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Variables.cs" />
     <EmbeddedResource Include="frmArticulo.resx">
@@ -168,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmcategoria.resx">
       <DependentUpon>frmcategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsulta_ventafechas.resx">
+      <DependentUpon>frmconsulta_ventafechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmingreso.resx">
       <DependentUpon>frmingreso.cs</DependentUpon>
@@ -212,8 +266,13 @@
     <EmbeddedResource Include="Reportes\frmreportearticulos.resx">
       <DependentUpon>frmreportearticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmreportecomprobanteventa.resx">
+      <DependentUpon>frmreportecomprobanteventa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RptArticulos.rdlc" />
+    <EmbeddedResource Include="Reportes\RptComprobanteVenta.rdlc" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -357,6 +416,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\group-36_116047.ico" />
+    <None Include="Resources\business_salesreport_salesreport_negocio_2353.ico" />
+    <None Include="Resources\report.ico" />
+    <Content Include="cashier2_118191.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -370,6 +432,23 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.15.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2019 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

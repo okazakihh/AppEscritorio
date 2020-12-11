@@ -56,30 +56,30 @@
             this.label5 = new System.Windows.Forms.Label();
             this.CboCategoria = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.chkseleccionar = new System.Windows.Forms.CheckBox();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.lbltotal = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dgblistado = new System.Windows.Forms.DataGridView();
-            this.tabgeneral = new System.Windows.Forms.TabControl();
-            this.BtnReporte = new System.Windows.Forms.Button();
-            this.btneliminar = new System.Windows.Forms.Button();
-            this.btndesactivar = new System.Windows.Forms.Button();
-            this.btnactivar = new System.Windows.Forms.Button();
-            this.btnbuscar = new System.Windows.Forms.Button();
             this.PicImagen = new System.Windows.Forms.PictureBox();
             this.BtnCargarImagen = new System.Windows.Forms.Button();
             this.btnactualizar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btninsertar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.chkseleccionar = new System.Windows.Forms.CheckBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BtnReporte = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btndesactivar = new System.Windows.Forms.Button();
+            this.btnactivar = new System.Windows.Forms.Button();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.dgblistado = new System.Windows.Forms.DataGridView();
+            this.tabgeneral = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgblistado)).BeginInit();
             this.tabgeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // errorIcono
@@ -304,194 +304,6 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Categoría(*)";
             // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "Seleccionar";
-            this.Seleccionar.MinimumWidth = 6;
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
-            this.Seleccionar.Width = 125;
-            // 
-            // chkseleccionar
-            // 
-            this.chkseleccionar.AutoSize = true;
-            this.chkseleccionar.Location = new System.Drawing.Point(53, 340);
-            this.chkseleccionar.Name = "chkseleccionar";
-            this.chkseleccionar.Size = new System.Drawing.Size(141, 29);
-            this.chkseleccionar.TabIndex = 4;
-            this.chkseleccionar.Text = "Seleccionar";
-            this.chkseleccionar.UseVisualStyleBackColor = true;
-            this.chkseleccionar.CheckedChanged += new System.EventHandler(this.chkseleccionar_CheckedChanged);
-            // 
-            // txtbuscar
-            // 
-            this.txtbuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtbuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbuscar.Location = new System.Drawing.Point(20, 35);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(253, 23);
-            this.txtbuscar.TabIndex = 2;
-            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
-            // 
-            // lbltotal
-            // 
-            this.lbltotal.AutoSize = true;
-            this.lbltotal.Location = new System.Drawing.Point(901, 434);
-            this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(62, 25);
-            this.lbltotal.TabIndex = 1;
-            this.lbltotal.Text = "Total:";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tabPage1.Controls.Add(this.BtnReporte);
-            this.tabPage1.Controls.Add(this.btneliminar);
-            this.tabPage1.Controls.Add(this.btndesactivar);
-            this.tabPage1.Controls.Add(this.btnactivar);
-            this.tabPage1.Controls.Add(this.chkseleccionar);
-            this.tabPage1.Controls.Add(this.btnbuscar);
-            this.tabPage1.Controls.Add(this.txtbuscar);
-            this.tabPage1.Controls.Add(this.lbltotal);
-            this.tabPage1.Controls.Add(this.dgblistado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1228, 498);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Listado";
-            // 
-            // dgblistado
-            // 
-            this.dgblistado.AllowUserToAddRows = false;
-            this.dgblistado.AllowUserToDeleteRows = false;
-            this.dgblistado.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgblistado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgblistado.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.dgblistado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgblistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgblistado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgblistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgblistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Seleccionar});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgblistado.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgblistado.Location = new System.Drawing.Point(20, 77);
-            this.dgblistado.Name = "dgblistado";
-            this.dgblistado.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgblistado.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgblistado.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgblistado.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgblistado.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgblistado.RowTemplate.Height = 24;
-            this.dgblistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgblistado.Size = new System.Drawing.Size(1202, 239);
-            this.dgblistado.TabIndex = 0;
-            this.dgblistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellContentClick);
-            this.dgblistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellDoubleClick);
-            // 
-            // tabgeneral
-            // 
-            this.tabgeneral.Controls.Add(this.tabPage1);
-            this.tabgeneral.Controls.Add(this.tabPage2);
-            this.tabgeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabgeneral.Location = new System.Drawing.Point(1, 0);
-            this.tabgeneral.Name = "tabgeneral";
-            this.tabgeneral.SelectedIndex = 0;
-            this.tabgeneral.Size = new System.Drawing.Size(1236, 536);
-            this.tabgeneral.TabIndex = 1;
-            // 
-            // BtnReporte
-            // 
-            this.BtnReporte.FlatAppearance.BorderSize = 0;
-            this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReporte.Image = global::sistema.presentacion.Properties.Resources.group_36_116047;
-            this.BtnReporte.Location = new System.Drawing.Point(352, 18);
-            this.BtnReporte.Name = "BtnReporte";
-            this.BtnReporte.Size = new System.Drawing.Size(50, 41);
-            this.BtnReporte.TabIndex = 8;
-            this.BtnReporte.UseVisualStyleBackColor = true;
-            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
-            // 
-            // btneliminar
-            // 
-            this.btneliminar.FlatAppearance.BorderSize = 0;
-            this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneliminar.Image = global::sistema.presentacion.Properties.Resources.eliminar;
-            this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneliminar.Location = new System.Drawing.Point(566, 426);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(112, 37);
-            this.btneliminar.TabIndex = 7;
-            this.btneliminar.Text = "Eliminar";
-            this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btneliminar.UseVisualStyleBackColor = true;
-            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
-            // 
-            // btndesactivar
-            // 
-            this.btndesactivar.FlatAppearance.BorderSize = 0;
-            this.btndesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndesactivar.Image = global::sistema.presentacion.Properties.Resources.cancel_stop_exit_1583;
-            this.btndesactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndesactivar.Location = new System.Drawing.Point(398, 426);
-            this.btndesactivar.Name = "btndesactivar";
-            this.btndesactivar.Size = new System.Drawing.Size(140, 37);
-            this.btndesactivar.TabIndex = 6;
-            this.btndesactivar.Text = "Desactivar";
-            this.btndesactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndesactivar.UseVisualStyleBackColor = true;
-            this.btndesactivar.Click += new System.EventHandler(this.btndesactivar_Click);
-            // 
-            // btnactivar
-            // 
-            this.btnactivar.FlatAppearance.BorderSize = 0;
-            this.btnactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnactivar.Image = global::sistema.presentacion.Properties.Resources.siii;
-            this.btnactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnactivar.Location = new System.Drawing.Point(278, 426);
-            this.btnactivar.Name = "btnactivar";
-            this.btnactivar.Size = new System.Drawing.Size(97, 37);
-            this.btnactivar.TabIndex = 5;
-            this.btnactivar.Text = "Activar";
-            this.btnactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnactivar.UseVisualStyleBackColor = true;
-            this.btnactivar.Click += new System.EventHandler(this.btnactivar_Click);
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.FlatAppearance.BorderSize = 0;
-            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbuscar.Image = global::sistema.presentacion.Properties.Resources.buscar;
-            this.btnbuscar.Location = new System.Drawing.Point(278, 18);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(50, 41);
-            this.btnbuscar.TabIndex = 3;
-            this.btnbuscar.UseVisualStyleBackColor = true;
-            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
-            // 
             // PicImagen
             // 
             this.PicImagen.Location = new System.Drawing.Point(817, 117);
@@ -568,6 +380,194 @@
             this.panel1.Size = new System.Drawing.Size(210, 153);
             this.panel1.TabIndex = 24;
             // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.MinimumWidth = 6;
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Width = 125;
+            // 
+            // chkseleccionar
+            // 
+            this.chkseleccionar.AutoSize = true;
+            this.chkseleccionar.Location = new System.Drawing.Point(53, 340);
+            this.chkseleccionar.Name = "chkseleccionar";
+            this.chkseleccionar.Size = new System.Drawing.Size(141, 29);
+            this.chkseleccionar.TabIndex = 4;
+            this.chkseleccionar.Text = "Seleccionar";
+            this.chkseleccionar.UseVisualStyleBackColor = true;
+            this.chkseleccionar.CheckedChanged += new System.EventHandler(this.chkseleccionar_CheckedChanged);
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtbuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbuscar.Location = new System.Drawing.Point(20, 35);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(253, 23);
+            this.txtbuscar.TabIndex = 2;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Location = new System.Drawing.Point(901, 434);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(62, 25);
+            this.lbltotal.TabIndex = 1;
+            this.lbltotal.Text = "Total:";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.BtnReporte);
+            this.tabPage1.Controls.Add(this.btneliminar);
+            this.tabPage1.Controls.Add(this.btndesactivar);
+            this.tabPage1.Controls.Add(this.btnactivar);
+            this.tabPage1.Controls.Add(this.chkseleccionar);
+            this.tabPage1.Controls.Add(this.btnbuscar);
+            this.tabPage1.Controls.Add(this.txtbuscar);
+            this.tabPage1.Controls.Add(this.lbltotal);
+            this.tabPage1.Controls.Add(this.dgblistado);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1228, 498);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Listado";
+            // 
+            // BtnReporte
+            // 
+            this.BtnReporte.FlatAppearance.BorderSize = 0;
+            this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReporte.Image = global::sistema.presentacion.Properties.Resources.report;
+            this.BtnReporte.Location = new System.Drawing.Point(352, 18);
+            this.BtnReporte.Name = "BtnReporte";
+            this.BtnReporte.Size = new System.Drawing.Size(50, 41);
+            this.BtnReporte.TabIndex = 8;
+            this.BtnReporte.UseVisualStyleBackColor = true;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
+            // 
+            // btneliminar
+            // 
+            this.btneliminar.FlatAppearance.BorderSize = 0;
+            this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneliminar.Image = global::sistema.presentacion.Properties.Resources.eliminar;
+            this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneliminar.Location = new System.Drawing.Point(566, 426);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(112, 37);
+            this.btneliminar.TabIndex = 7;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // btndesactivar
+            // 
+            this.btndesactivar.FlatAppearance.BorderSize = 0;
+            this.btndesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndesactivar.Image = global::sistema.presentacion.Properties.Resources.cancel_stop_exit_1583;
+            this.btndesactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndesactivar.Location = new System.Drawing.Point(398, 426);
+            this.btndesactivar.Name = "btndesactivar";
+            this.btndesactivar.Size = new System.Drawing.Size(140, 37);
+            this.btndesactivar.TabIndex = 6;
+            this.btndesactivar.Text = "Desactivar";
+            this.btndesactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndesactivar.UseVisualStyleBackColor = true;
+            this.btndesactivar.Click += new System.EventHandler(this.btndesactivar_Click);
+            // 
+            // btnactivar
+            // 
+            this.btnactivar.FlatAppearance.BorderSize = 0;
+            this.btnactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactivar.Image = global::sistema.presentacion.Properties.Resources.siii;
+            this.btnactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnactivar.Location = new System.Drawing.Point(278, 426);
+            this.btnactivar.Name = "btnactivar";
+            this.btnactivar.Size = new System.Drawing.Size(97, 37);
+            this.btnactivar.TabIndex = 5;
+            this.btnactivar.Text = "Activar";
+            this.btnactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnactivar.UseVisualStyleBackColor = true;
+            this.btnactivar.Click += new System.EventHandler(this.btnactivar_Click);
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.FlatAppearance.BorderSize = 0;
+            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscar.Image = global::sistema.presentacion.Properties.Resources.buscar;
+            this.btnbuscar.Location = new System.Drawing.Point(278, 18);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(50, 41);
+            this.btnbuscar.TabIndex = 3;
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // dgblistado
+            // 
+            this.dgblistado.AllowUserToAddRows = false;
+            this.dgblistado.AllowUserToDeleteRows = false;
+            this.dgblistado.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgblistado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgblistado.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.dgblistado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgblistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgblistado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgblistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgblistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Seleccionar});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgblistado.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgblistado.Location = new System.Drawing.Point(20, 77);
+            this.dgblistado.Name = "dgblistado";
+            this.dgblistado.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgblistado.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgblistado.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgblistado.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgblistado.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgblistado.RowTemplate.Height = 24;
+            this.dgblistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgblistado.Size = new System.Drawing.Size(1202, 239);
+            this.dgblistado.TabIndex = 0;
+            this.dgblistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellContentClick);
+            this.dgblistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgblistado_CellDoubleClick);
+            // 
+            // tabgeneral
+            // 
+            this.tabgeneral.Controls.Add(this.tabPage1);
+            this.tabgeneral.Controls.Add(this.tabPage2);
+            this.tabgeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabgeneral.Location = new System.Drawing.Point(1, 0);
+            this.tabgeneral.Name = "tabgeneral";
+            this.tabgeneral.SelectedIndex = 0;
+            this.tabgeneral.Size = new System.Drawing.Size(1236, 536);
+            this.tabgeneral.TabIndex = 1;
+            // 
             // frmArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -584,11 +584,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgblistado)).EndInit();
             this.tabgeneral.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -135,3 +135,10 @@ D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\zh-CHT\Microsoft.Repo
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.Reportes.frmreportearticulos.resources
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\RdlCompile.cache
 D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\RdlCompile.compiled
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.Reportes.frmreportecomprobanteventa.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.frmconsulta_ventafechas.resources
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\sistema.presentacion.exe.manifest
+D:\vb\App Sistema V\sistema\sistema.presentacion\bin\Debug\sistema.presentacion.application
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.TrustInfo.xml
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.exe.manifest
+D:\vb\App Sistema V\sistema\sistema.presentacion\obj\Debug\sistema.presentacion.application
